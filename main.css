@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #001a34;
+}
+
+.container {
+    max-width: 1070px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #00bebe;
+    font-weight: 500;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.button {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border-color: #00bebe;
+    color: #00bebe;
+    outline: none;
+    box-shadow: none;
+    font-family: 'GT Eesti Pro Display', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.button--blue {
+    background-color: #00bebe;
+    color: #ffffff;
+}
+
+input {
+    border-color: none;
+    border: 1px solid;
+    outline: none;
+}
+
+.input {
+    height: 44px;
+    padding: 0 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid rgb(204, 214, 222);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    width: 30px;
+    height: 30px;
+}
+
+.text {
+    color: #ffffff;
+}
+
+.text--blue {
+    background-color: #00bebe;
+}
+
+.text--pink {
+    color: #ff96bb;
+}
+
+.text--size-46 {
+    font-size: 46px;
+}
+
+.text--size-40 {
+    font-size: 40px;
+}
+
+.text--size-30 {
+    font-size: 30px;
+}
+
+.text--size-24 {
+    font-size: 24px;
+}
+
+.text--size-20 {
+    font-size: 20px;
+}
+
+.text--size-14 {
+    font-size: 14px;
+}
+
+.text-title {
+    padding: 0 0 4px 0;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: #00bebe;
+    border-bottom: solid 1px #ffffff70;
+    top: 0px;
+}
+
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+}
+
+.title-img {
+    margin-top: 100px;
+}
+
+.title-img__block-content {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.main-text {
+    padding-top: 100px;
+    background-color: #00bebe;
+    border-radius: 0 0 40px 40px;
+}
+
+.main-text__block {
+    display: flex;
+    justify-content: center;
+}
+
+.head-photo {
+    width: 100%;
+    height: auto;
+}
+
+.main-text__photo {
+    min-width: 250px;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.main-text__block-text {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 30px;
+}
+
+/* TODO index__full-informaition-block */
+
+.information-about-us {
+    margin: 0 auto 50px;
+}
+
+.green {
+    color: #ff96bb;
+}
+
+.index__information-title {
+    margin-top: 120px;
+}
+
+.information-about-us__block {
+    margin-top: 50px;
+    display: grid;
+    gap: 30px 10px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.information-about-us__block-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+}
+
+.title-img__img {
+    margin: auto 0;
+    width: 300px;
+    height: 300px;
+}
+
+.opacity {
+    opacity: 0.5;
+    width: 80px;
+    height: 80px;
+    background-color: #00bebe;
+    transform: rotate(20deg);
+}
+
+.form__input-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form__wrapper{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form {
+    padding: 100px 0;
+    background-color: #00bebe3a;
+}
+
+.form-title {
+    margin: 50px 0;
+}
+
+.form-subsidiary-title {
+    margin-bottom: 25px;
+}
+
+.index__phone {
+    width: 40px;
+}
+
+.form__button {
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #00bebe;
+}
+
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+}
+
+@media (max-width : 850px) {
+
+    .index__information-title {
+        font-size: 40px;
+    }
+
+    .main-text__text {
+        font-size: 30px;
+    }
+
+    .main-text__block {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .main-text__block-text {
+        text-align: center;
+    }
+
+}
+
+@media (max-width : 540px) {
+
+    .index__information-title {
+        font-size: 32px;
+    }
+
+    .main-text__text {
+        font-size: 20px;
+    }
+
+    .information-about-us__block {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .form-title{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width : 900px) { 
+    .title-img__block-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
